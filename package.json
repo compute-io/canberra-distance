@@ -25,12 +25,25 @@
   "keywords": [
     "compute.io",
     "compute",
-    "computation"
+    "computation",
+    "distance",
+    "similarity",
+    "information theory",
+    "mathematics",
+    "math",
+    "array",
+    "dist",
+    "difference",
+    "metric",
+    "vector",
   ],
   "bugs": {
     "url": "https://github.com/compute-io/canberra-distance/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "validate.io-array": "^1.0.5",
+    "validate.io-function": "^1.0.2"
+  },
   "devDependencies": {
     "chai": "2.x.x",
     "mocha": "2.x.x",
