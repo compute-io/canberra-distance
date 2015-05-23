@@ -36,6 +36,9 @@
     "difference",
     "metric",
     "vector",
+    "manhattan distance",
+    "L1 distance",
+    "norm"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/canberra-distance/issues"
