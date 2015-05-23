@@ -23,7 +23,7 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'compute-canberra-distance' );
+var canberra = require( 'compute-canberra-distance' );
 ```
 
 #### canberra( x, y[, accessor] )
