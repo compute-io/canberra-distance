@@ -1,6 +1,6 @@
 canberra-distance
 ===
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependencies][dependencies-image]][dependencies-url]
 
 >  Computes the [Canberra distance](http://en.wikipedia.org/wiki/Canberra_distance) between two arrays.
 
@@ -23,7 +23,7 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'compute-canberra-distance' );
+var canberra = require( 'compute-canberra-distance' );
 ```
 
 #### canberra( x, y[, accessor] )
@@ -75,7 +75,7 @@ If provided empty `arrays`, the function returns `null`.
 ## Examples
 
 ``` javascript
-var distance = require( 'compute-canberra-distance' );
+var canberra = require( 'compute-canberra-distance' );
 
 var x = new Array( 100 ),
 	y = new Array( 100 ),
@@ -85,9 +85,7 @@ for ( var i = 0; i < x.length; i++ ) {
 	x[ i ] = Math.round( Math.random()*100 );
 	y[ i ] = Math.round( Math.random()*100 );
 }
-d = distance( x, y );
-
-console.log( d );
+d = canberra( x, y );
 ```
 
 To run the example code from the top-level application directory,
@@ -142,8 +140,8 @@ Copyright &copy; 2015. The Compute.io Authors.
 [travis-image]: http://img.shields.io/travis/compute-io/canberra-distance/master.svg
 [travis-url]: https://travis-ci.org/compute-io/canberra-distance
 
-[coveralls-image]: https://img.shields.io/coveralls/compute-io/canberra-distance/master.svg
-[coveralls-url]: https://coveralls.io/r/compute-io/canberra-distance?branch=master
+[codecov-image]: https://img.shields.io/codecov/c/github/compute-io/canberra-distance/master.svg
+[codecov-url]: https://codecov.io/github/compute-io/canberra-distance?branch=master
 
 [dependencies-image]: http://img.shields.io/david/compute-io/canberra-distance.svg
 [dependencies-url]: https://david-dm.org/compute-io/canberra-distance
